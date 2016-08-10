@@ -1,0 +1,33 @@
+<div>
+    <a href="/">Dodajte film</a>
+    <a href="/lista">Lista filmova</a>
+</div>
+
+
+
+<section class="get">
+    <h3>Ucitaj filmove</h3>
+    <a href="/lista/get-data">LOAD DATA</a>
+    <div>
+        {{# each items }}
+            <article class="item">
+                <div>Naslov: {{ this.title }}</div>
+                <div>Ocena: {{ this.content }}</div>
+                <div>Reziser: {{ this.author }}</div>
+                <div>ID: {{ this._id }}</div>
+            </article>
+        {{/each}}
+    </div>
+</section>
+
+</section>
+<section class="delete">
+    <h3>Izbrisi film</h3>
+    <form action="/delete" method="post">
+        <div class="input">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <button type="submit">DELETE</button>
+    </form>
+</section>

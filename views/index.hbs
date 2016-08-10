@@ -1,0 +1,47 @@
+<div>
+    <a href="/">Dodajte film</a>
+    <a href="/lista">Lista filmova</a>
+</div>
+
+<section class="insert">
+    <h3>Dodaj ilm</h3>
+    <form action="/insert" method="post">
+        <div class="input">
+            <label for="title">Naslov</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div class="input">
+            <label for="content">Ocena</label>
+            <input type="text" id="content" name="content">
+        </div>
+        <div class="input">
+            <label for="author">Reziser</label>
+            <input type="text" id="author" name="author">
+        </div>
+        <button type="submit">Dodaj</button>
+    </form>
+</section>
+
+<section class="update">
+    <h3>Izmeni unos</h3>
+    <form action="/update" method="post">
+        <div class="input">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <div class="input">
+            <label for="title">Naslov</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div class="input">
+            <label for="content">Ocena</label>
+            <input type="text" id="content" name="content">
+        </div>
+        <div class="input">
+            <label for="author">Reziser</label>
+            <input type="text" id="author" name="author">
+        </div>
+        <button type="submit">Azuriraj</button>
+    </form>
+</section>
+
